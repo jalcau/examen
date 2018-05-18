@@ -1,7 +1,8 @@
   <%@include file="/templates/head.jsp" %>
 <%@include file="/templates/navbar.jsp" %>
   
-  
+<h1>Bienvenido!! ${usuario.nombre } </h1>
+
   
    <form class="form-signin" action="consultas" method="post">     
    
@@ -24,5 +25,5 @@
   <button class="btn btn-lg btn-success btn-block" type="submit">Buscar</button>
   </form>
   
-  
+
   <jsp:include page="templates/footer.jsp"></jsp:include>

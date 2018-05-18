@@ -64,6 +64,7 @@ public class LoginController extends HttpServlet {
 		try {
 		String nombre = request.getParameter("usuario");
 		String password = request.getParameter("password");
+		
 
 		Usuario usuario = daoUsuario.check(nombre,password);
 		
@@ -75,7 +76,9 @@ public class LoginController extends HttpServlet {
 			
 			view="consultas.jsp";
 			alert = new Alert("Ongi Etorri", Alert.TIPO_PRIMARY);
+			request.setAttribute("usuario",usuario);
 			request.setAttribute("alert", alert);
+		
 		} else {
 			alert = new Alert("Credenciales incorrectas, prueba de nuevo");
 			view = "login.jsp";
@@ -88,6 +91,7 @@ public class LoginController extends HttpServlet {
 			request.setAttribute("alert", alert);
 			
 		} finally {
+			
 			request.setAttribute("alert", alert);
 			
 			request.getRequestDispatcher(view).forward(request, response);
