@@ -1,6 +1,8 @@
 package com.ipartek.controller;
 
+
 import com.ipartek.model.UsuarioDao;
+import com.ipartek.pojo.Alert;
 import com.ipartek.pojo.Usuario;
 
 
@@ -24,6 +26,7 @@ public class LoginController extends HttpServlet {
 	private UsuarioDao daoUsuario;
 	private static final long serialVersionUID = 1L;
 	private String view = "";
+	private Alert alert = new Alert();
 	
 	@Override
 	public void init(ServletConfig config) throws ServletException {
@@ -69,16 +72,23 @@ public class LoginController extends HttpServlet {
 			// guardar usuario en session
 			HttpSession session = request.getSession();
 			session.setAttribute("usuario", usuario);
+			
 			view="consultas.jsp";
+			alert = new Alert("Ongi Etorri", Alert.TIPO_PRIMARY);
+			request.setAttribute("alert", alert);
 		} else {
-
+			alert = new Alert("Credenciales incorrectas, prueba de nuevo");
 			view = "login.jsp";
+			request.setAttribute("alert", alert);
 			
 		}} catch (Exception e) {
 			e.printStackTrace();
 			view = "login.jsp";
+			alert = new Alert();
+			request.setAttribute("alert", alert);
 			
 		} finally {
+			request.setAttribute("alert", alert);
 			
 			request.getRequestDispatcher(view).forward(request, response);
 		}

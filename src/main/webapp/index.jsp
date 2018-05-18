@@ -1,9 +1,12 @@
 <%@include file="/templates/head.jsp" %>
 <%@include file="/templates/navbar.jsp" %>
 
-<html>
-<body>
-<h2>Bienvenido Usuario!!!!</h2>
-</body>
-</html>
-<jsp:include page="templates/footer.jsp"></jsp:include>
+   <div class="form-label-group">
+        <input type="text" class="form-control"
+               name="usuario" 
+               value=""
+               placeholder="Codigo Postal" 
+               required autofocus>
+               
+        <label for="usuario">Codigo Postal</label>
+      </div>

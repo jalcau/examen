@@ -28,8 +28,8 @@ public class UsuarioDao {
 	public Usuario check(String nombre, String pass) {
 		Usuario resul = null;
 		
-		String sql = "SELECT u.id as 'usuario_id', u.nombre as 'usuario_nombre', u.password as 'usuario_password'"
-				+ "FROM usuario as u" + " u.nombre=? and u.password = ?;";
+		String sql = "SELECT u.id as 'usuario_id', u.nombre as 'usuario_nombre', u.password "
+				+ "FROM usuario as u " + "WHERE u.nombre=? and u.password = ?;";
 		try (Connection con = ConnectionManager.getConnection(); PreparedStatement pst = con.prepareStatement(sql);) {
 			pst.setString(1, nombre);
 			pst.setString(2, pass);
@@ -51,7 +51,7 @@ public class UsuarioDao {
 	Usuario u = new Usuario();
 	u.setId(rs.getInt("usuario_id"));
 	u.setNombre(rs.getString("usuario_nombre"));
-	u.setPass(rs.getString("usuario_password"));
+	u.setPass(rs.getString("password"));
 	return u;
 }
 }

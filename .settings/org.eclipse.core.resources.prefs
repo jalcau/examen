@@ -1,5 +1,15 @@
 eclipse.preferences.version=1
 encoding//src/main/java=UTF-8
+encoding//src/main/java/com/ipartek/formacion/web_service_soap/AlumnoInfo.java=UTF-8
+encoding//src/main/java/com/ipartek/formacion/web_service_soap/CodigoPostal.java=UTF-8
+encoding//src/main/java/com/ipartek/formacion/web_service_soap/GetAlumnoRequest.java=UTF-8
+encoding//src/main/java/com/ipartek/formacion/web_service_soap/GetAlumnoResponse.java=UTF-8
+encoding//src/main/java/com/ipartek/formacion/web_service_soap/GetCodidoResponse.java=UTF-8
+encoding//src/main/java/com/ipartek/formacion/web_service_soap/GetCodigoRequest.java=UTF-8
+encoding//src/main/java/com/ipartek/formacion/web_service_soap/UniveridadPort.java=UTF-8
+encoding//src/main/java/com/ipartek/formacion/web_service_soap/UniveridadPortService.java=UTF-8
+encoding//src/main/java/com/ipartek/formacion/web_service_soap/UniveridadPortServiceLocator.java=UTF-8
+encoding//src/main/java/com/ipartek/formacion/web_service_soap/UniveridadPortSoap11Stub.java=UTF-8
 encoding//src/main/resources=UTF-8
 encoding//src/test/java=UTF-8
 encoding//src/test/resources=UTF-8

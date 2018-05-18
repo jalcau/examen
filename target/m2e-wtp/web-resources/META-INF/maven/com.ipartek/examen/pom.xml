@@ -37,7 +37,13 @@
 			<version>${javax.jsp.version}</version>
 			<scope>provided</scope>
 		</dependency>
-
+		<!-- https://mvnrepository.com/artifact/org.apache.axis/axis -->
+<!-- https://mvnrepository.com/artifact/axis/axis -->
+<dependency>
+    <groupId>axis</groupId>
+    <artifactId>axis</artifactId>
+    <version>1.4</version>
+</dependency>
 		<dependency>
 			<groupId>jstl</groupId>
 			<artifactId>jstl</artifactId>

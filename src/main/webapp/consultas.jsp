@@ -1,12 +1,28 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
-<h1>Correcto</h1>
-</body>
-</html>
+  <%@include file="/templates/head.jsp" %>
+<%@include file="/templates/navbar.jsp" %>
+  
+  
+  
+   <form class="form-signin" action="consultas" method="post">     
+   
+   
+   
+
+      <div class="form-label-group">
+        <input type="text" class="form-control"
+               name="codigo" 
+               value=""
+               placeholder="CodigoPostal" 
+               required autofocus>
+               
+        <label for="usuario">Codigo Postal (1-5)</label>
+      </div>
+ 
+ 
+ 
+ 
+  <button class="btn btn-lg btn-success btn-block" type="submit">Buscar</button>
+  </form>
+  
+  
+  <jsp:include page="templates/footer.jsp"></jsp:include>
