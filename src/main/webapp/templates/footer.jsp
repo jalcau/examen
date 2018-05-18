@@ -10,7 +10,9 @@
     <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
 	
-   <
-    
+      <p>Informacion de Ayuda <a href="mailto:jorge@example.com">jorge@example.com</a>.</p>
+
+
+
   </body>
 </html>
